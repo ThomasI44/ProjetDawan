@@ -43,7 +43,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+<<<<<<< HEAD
 }/* Fin du grid pour la page d'acceuil utilisateur */
+=======
+}
+/* Fin du grid pour la page d'acceuil utilisateur */
+>>>>>>> f36d19215871b1d12e9bf7008bfe8cff9fcb4cfe
 
 /* Début déclaration du GRID pour la page d'acceuil (sans connexion user; page acceuil.html) */
 
@@ -54,7 +59,11 @@
     grid-gap: 20px;
     grid-template-areas: 
     "menu menu menu menu menu menu"
+<<<<<<< HEAD
     "sidebar main main main main main"
+=======
+    "main main main main main main"
+>>>>>>> f36d19215871b1d12e9bf7008bfe8cff9fcb4cfe
     "footer footer footer footer footer footer";
   }
   
@@ -83,4 +92,8 @@
     flex-direction: row;
     justify-content: space-between;
   }
+<<<<<<< HEAD
   /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
+=======
+  /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
+>>>>>>> f36d19215871b1d12e9bf7008bfe8cff9fcb4cfe
