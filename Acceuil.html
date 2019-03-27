@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/stylegrid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/topnavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Projet</title>
 </head>
 
@@ -16,8 +23,37 @@
                 <a href="acceuil.html" title="Retour vers la page d'accueil">
                     <img src="#" alt="ProjetDawan"></a>
             </header>
-            <nav>
-            </nav>
+
+                		<!--   AJOUT SIDEBAR    -->
+		<div id="st-container" class="st-container">
+
+                <nav class="st-menu st-effect-5" id="menu-5">
+                    <h2 class="icon icon-stack">Sidebar</h2>
+                    <ul>
+                        <li><a class="icon icon-data" href="#">Connexion</a></li>
+                        <li><a class="icon icon-location" href="#">Inscription</a></li>
+                        <li><a class="icon icon-study" href="#">A propos</a></li>
+                        <li><a class="icon icon-photo" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                
+                <!-- content push wrapper -->
+                <div class="st-pusher">
+                    <div class="st-content"><!-- this is the wrapper for the content -->
+                        <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+                            <div class="main clearfix">
+                                <div id="st-trigger-effects" class="column">
+                                    <button data-effect="st-effect-5">Reverse slide out</button>
+                                </div>
+                            </div><!-- /main -->
+                        </div><!-- /st-content-inner -->
+                    </div><!-- /st-content -->
+                </div><!-- /st-pusher -->
+            </div><!-- /st-container -->
+    
+            <!--  FIN AJOUT SIDEBAR    -->
+
             <div class="main">
                 <article class="box">
                     <h2>fil d'actu</h2>
@@ -38,6 +74,11 @@
                     <a href="index.html" title="Instagram" alt="Instagram">Instagram</a>
                 </div>
             </footer>
+       
+       
+       
+       
+       
         </section>
     </main>
 </body>
