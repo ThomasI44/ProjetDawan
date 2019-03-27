@@ -55,7 +55,7 @@
     grid-gap: 20px;
     grid-template-areas: 
     "menu menu menu menu menu menu"
-    "main main main main main menu"
+    "main main main main main main"
     "footer footer footer footer footer footer";
   }
   
