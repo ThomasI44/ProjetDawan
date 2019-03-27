@@ -2,98 +2,85 @@
 /* colortation des cases (pour s'y retrouver dans le grid) */
 .box {
   background-color: lightgray;
-  opacity: 0.9;
   color: #fff;
-  padding: 20px;
 }
-/* Début déclaration du GRID pour la page d'acceuil utilisateur (page acceuiluser.html)*/
+/* Début déclaration du GRID pour la page d'acceuil utilisateur (page logedIndex.html)*/
 
-.sectionuser {
+.sectionUser {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-gap: 20px;
+  grid-gap: 10px;
+  grid-template-columns: [nav-start] 15% [nav-end] auto [main-end] 25% [aside-end];
+  grid-template-rows: [head-start] 5% [head-end] auto [body-end];
   grid-template-areas: 
-  "menuuser menuuser menuuser menuuser menuuser menuuser"
-  ". mainuser mainuser mainuser mainuser sidebaruser"
-  "footeruser mainuser mainuser mainuser mainuser sidebaruser";
+  "menuuser menuuser menuuser"
+  "navuser mainuser sidebaruser";
+
 }
 
-.menuuser {
-  grid-area: menuuser;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.menuUser {
+  grid-column-start: nav-start;
+  grid-column-end: aside-end;
+  grid-row-start: head-start;
+  grid-row-end: head-end;
+
 }
 
-.mainuser {
-  grid-area: mainuser;
-  display: grid;
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 20px;
-  text-align: center;
+.navUser{
+  grid-column-start: nav-start;
+  grid-column-end: nav-end;
+  grid-row-start: head-end;
+  grid-row-end: body-end;
+}
+
+.mainUser {
+  grid-column-start: nav-end;
+  grid-column-end: main-end;
+  grid-row-start: head-end;
+  grid-row-end: body-end;
+
 }
  
-.sidebaruser {
-  grid-area: sidebaruser;
+.sidebarUser {
+  grid-column-start: main-end;
+  grid-column-end: aside-end;
+  grid-row-start: head-end;
+  grid-row-end: body-end;
 }
 
-.socialuser {
-  grid-area: footeruser;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-<<<<<<< HEAD
-}/* Fin du grid pour la page d'acceuil utilisateur */
-=======
-}
+
 /* Fin du grid pour la page d'acceuil utilisateur */
->>>>>>> f36d19215871b1d12e9bf7008bfe8cff9fcb4cfe
 
-/* Début déclaration du GRID pour la page d'acceuil (sans connexion user; page acceuil.html) */
+
+
+/* Début déclaration du GRID pour la page d'acceuil (sans connexion user; page unlogedIndex.html) */
 
 .section {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 20px;
-    grid-template-areas: 
-    "menu menu menu menu menu menu"
-<<<<<<< HEAD
-    "sidebar main main main main main"
-=======
-    "main main main main main main"
->>>>>>> f36d19215871b1d12e9bf7008bfe8cff9fcb4cfe
-    "footer footer footer footer footer footer";
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: [head-start] 5% [head-end] auto [body-end] 300px [footer-end];
+  grid-template-areas: 
+  "menu"
+  "main"
+  "footer";
   }
   
   .menu {
-    grid-area: menu;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    grid-row-start: head-start;
+    grid-row-end: head-end;
   }
   
-  .sidebar {
-    grid-area: sidebar;
-  }
+
  
   .main {
-    grid-area: main;
-    display: grid;
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 20px;
-    text-align: center;
+    grid-row-start: head-end;
+    grid-row-end: body-end;
   }
   
-  .social {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+  .footer{
+    grid-row-start: body-end;
+    grid-row-end: footer-end;
   }
-<<<<<<< HEAD
   /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
-=======
-  /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
->>>>>>> f36d19215871b1d12e9bf7008bfe8cff9fcb4cfe
+
