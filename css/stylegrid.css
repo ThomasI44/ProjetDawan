@@ -11,11 +11,7 @@
 .sectionuser {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-<<<<<<< HEAD
   grid-template-rows: repeat(3, auto);
-=======
-  grid-template-rows: repeat(4, auto);
->>>>>>> 605272ae8d4ae594ef7eaf6b0411e01a27346ac6
   grid-gap: 20px;
   grid-template-areas: 
   "menuuser menuuser menuuser menuuser menuuser menuuser"
@@ -48,7 +44,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-<<<<<<< HEAD
 /* Fin du grid pour la page d'acceuil utilisateur */
 
 /* Début déclaration du GRID pour la page d'acceuil (sans connexion user; page acceuil.html) */
@@ -90,6 +85,3 @@
     justify-content: space-between;
   }
   /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
-=======
-/* Fin du grid */
->>>>>>> 605272ae8d4ae594ef7eaf6b0411e01a27346ac6
