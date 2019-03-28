@@ -62,8 +62,8 @@ main{
 #sidebar {
 
 
-    min-width: 250px;
-    max-width: 250px;
+  min-width: 250px;
+  max-width: 250px;
 	transition: all 0.3s;
 }
 #sidebar.active{
@@ -278,6 +278,20 @@ img {
 .modal-header {
 	position: relative;
 =======
->>>>>>> d5d5aa5fd90eef0a7ea37992ca901ffd9d2984eb
+
 }
->>>>>>> 40f03aca5403ce3cb9ec10ecc36513ec0570d218
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
