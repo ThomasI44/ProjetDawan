@@ -53,3 +53,43 @@ img {
 .mb-6 {
 	margin-top: 8%;
 }
+/* Fin de modif input unlogedindex */
+
+
+
+
+/*  */
+.features-icons {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+  }
+  
+  .features-icons .features-icons-item {
+	max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+	height: 7rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+	font-size: 4.5rem;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+	font-size: 5rem;
+  }
+  .testimonials {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+  }
+  
+  .testimonials .testimonial-item {
+	max-width: 18rem;
+  }
+  
+  .testimonials .testimonial-item img {
+	max-width: 12rem;
+	-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+	box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
