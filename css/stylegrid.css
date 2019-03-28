@@ -56,7 +56,7 @@
 .section {
   display: grid;
   grid-gap: 20px;
-  grid-template-rows: [head-start] 5% [head-end] auto [body-end] 300px [footer-end];
+  grid-template-rows: [head-start] auto [head-end] auto [body-end] 300px [footer-end];
   /* grid-template-areas: 
   "menu"
   "main"
