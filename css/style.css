@@ -197,8 +197,17 @@ img {
 
 /* page login  */
 
-#popUpWindow{
+#popUpWindow {
 	background: rgba(0, 0, 0, 0.555); 
 	text-align: center;
+
   }
 
+.modal-content {
+	background: rgba(0, 0, 0, 0.514);
+	display: flex;
+	
+}
+.modal-header {
+	position: relative;
+}
