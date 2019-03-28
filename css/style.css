@@ -105,6 +105,14 @@ img {
 		width: 50px;
 		height: 50px;
 <<<<<<< HEAD
+}
+
+/* Ajout du scroll en invisible sur les articles  */
+main:hidden {
+	overflow: scroll;
+}
+=======
+<<<<<<< HEAD
 	}
 
 
@@ -280,13 +288,6 @@ img {
 =======
 
 }
-
-
-
-
-
-
-
 
 
 
