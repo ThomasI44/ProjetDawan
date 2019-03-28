@@ -8,13 +8,12 @@
 
 .sectionUser {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-columns: [nav-start] 15% [nav-end] auto [main-end] 25% [aside-end];
   grid-template-rows: [head-start] 5% [head-end] auto [body-end];
-  /* grid-template-areas: 
-  "menuuser menuuser menuuser"
+  /* grid-template-areas:  */
+  /* "menuuser menuuser menuuser"
   "navuser mainuser sidebaruser"; */
-
 }
 
 .menuUser {
@@ -81,5 +80,10 @@
     grid-row-start: body-end;
     grid-row-end: footer-end;
   }
+
+
+
+
+
   /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
 
