@@ -8,13 +8,12 @@
 
 .sectionUser {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-columns: [nav-start] 15% [nav-end] auto [main-end] 25% [aside-end];
   grid-template-rows: [head-start] 5% [head-end] auto [body-end];
-  /* grid-template-areas: 
-  "menuuser menuuser menuuser"
+  /* grid-template-areas:  */
+  /* "menuuser menuuser menuuser"
   "navuser mainuser sidebaruser"; */
-
 }
 
 .menuUser {
@@ -56,13 +55,13 @@
 
 .section {
   display: grid;
-  grid-gap: 20px;
+  /*grid-gap: 10px;*/
   grid-template-columns: auto;
-  grid-template-rows: [head-start] 5% [head-end] auto [body-end] 300px [footer-end];
-  /* grid-template-areas: 
+  grid-template-rows: [head-start] auto [head-end] auto [body-end] 300px [footer-end];
+  grid-template-areas: 
   "menu"
   "main"
-  "footer"; */
+  "footer";
   }
   
   .menu {
@@ -82,5 +81,10 @@
     grid-row-start: body-end;
     grid-row-end: footer-end;
   }
+
+
+
+
+
   /* Fin du grid pour la page d'acceuil (sans connexion user; page acceuil.html)*/
 

@@ -39,4 +39,17 @@ img {
 		width: 50px;
 		height: 50px;
 	}
+
+
+
+/**modification input unlogedindex**/
+
+.masthead {
+	background-image:url(../img/background/fontInputUnlogedIndex.png);
+	padding: 250px 250px 250px;
+	
+} 
+
+.mb-6 {
+	margin-top: 8%;
 }
