@@ -5,42 +5,288 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
-a {
-	text-decoration: none;
-	color: #48a770;
-	outline: none;
+header{
+	position:sticky;
+	top:0;
 }
 
-a:hover, a:focus {
-	color: #2c774b;
-	outline: none;
-}
-
-button {
-	border: none;
-	padding: 0.6em 1.2em;
-	background: #388a5a;
-	color: #fff;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	font-size: 1em;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	cursor: pointer;
-	display: inline-block;
-	margin: 3px 2px;
-	border-radius: 2px;
-}
-
-button:hover {
-	background: #2c774b;
-}
 
 img {
 		width: 50px;
 		height: 50px;
+	}
+}
+
+
+
+
+
+
+
+/* DEBUT CSS TOP NAV BAR  */
+/* Style the navigation bar */
+
+  
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  /* @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  } */
+
+  /* FIN CSS TOP NAV BAR  */
+
+
+
+
+
+
+/* CSS POUR NAV BAR LATERAL  */
+
+
+
+.line{
+	width: 100%;
+}
+
+main{
+	width:100%;
+}
+
+<<<<<<< HEAD
+.wrapper {
+	display: flex;
+}
+#sidebar {
+
+
+    min-width: 250px;
+    max-width: 250px;
+	transition: all 0.3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+	
+}
+
+#sidebar .sidebar-header{
+	padding: 20px;
+
+}
+#sidebar ul.components{
+	padding: 20px;
+
+}
+
+
+
+#sidebar ul li a{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+
+
+
+/* FIN CSS NAV BAR LATERAL */
+
+
+
+=======
+img {
+		width: 50px;
+		height: 50px;
+<<<<<<< HEAD
 }
 
 /* Ajout du scroll en invisible sur les articles  */
 main:hidden {
 	overflow: scroll;
 }
+=======
+<<<<<<< HEAD
+	}
+
+
+
+/**modification input unlogedindex**/
+
+.masthead {
+	background-image:url(../img/background/fontInputUnlogedIndex.png);
+	background-attachment: fixed;
+	padding: 250px 250px 375px;
+	
+} 
+
+.mb-6 {
+	margin-top: 8%;
+}
+/* Fin de modif input unlogedindex */
+
+
+
+
+
+/*  Debut Icons Grid et presentation site */
+.features-icons {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+  }
+  
+  .features-icons .features-icons-item {
+	max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+	height: 7rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+	font-size: 4.5rem;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+	font-size: 5rem;
+  }
+ 
+/*  fin icon et presentation  */
+
+
+/* Debut du carousel text  */
+@keyframes changeLetter {
+	0% {
+	  content: "C'est la marmelade ";
+	}
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  content: "de ma grand-mère";
+	}
+  }
+  
+  .element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+  }
+
+	.element::after {
+	  animation: changeLetter 5s linear infinite alternate;
+	  display: block;
+	  content: "";
+	  font-size: 80px;
+	}
+  
+
+/* Carousel Text en 3 textes
+
+@keyframes changeLetter {
+   0% {opacity:0;}
+   2%{opacity:1; content:"A";}
+   31%{opacity:1;content: "A";}
+   33% {opacity:0;}
+   35%{opacity:1;content: "B";}
+   64%{opacity:1;content: "B";}
+   66% {opacity:0;}
+   68%{opacity:1;content: "C";}
+   98% {opacity: 1;content:"C"; }
+
+ }
+
+ .element {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size:200px;
+
+ }
+
+.element::after {
+     animation: changeLetter 20s linear infinite;
+     display: block;
+     content: "";
+
+   }
+ */
+  
+/* Fin du carousel text  */
+
+
+
+
+/*  Debut Image Showcases  */
+  .showcase .showcase-text {
+	padding: 3rem;
+  }
+  
+  .showcase .showcase-img {
+	min-height: 30rem;
+	background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+	.showcase .showcase-text {
+	  padding: 7rem;
+	}
+  }
+/*  fin Image Showcases */
+
+
+/* Debut du testimonials Commentaire */
+
+.testimonials {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+  }
+  
+  .testimonials .testimonial-item {
+	max-width: 18rem;
+  }
+  
+  .testimonials .testimonial-item img {
+	max-width: 12rem;
+	-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+	box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+
+
+/* footer */
+  footer.footer {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin-bottom: 1rem;
+  }
+  
+/* End Footer */
+
+
+/* page login  */
+
+#popUpWindow {
+	background: rgba(0, 0, 0, 0.555); 
+	text-align: center;
+
+  }
+
+.modal-content {
+	background: rgba(0, 0, 0, 0.514);
+	display: flex;
+	
+}
+.modal-header {
+	position: relative;
+=======
+>>>>>>> d5d5aa5fd90eef0a7ea37992ca901ffd9d2984eb
+}
+>>>>>>> 40f03aca5403ce3cb9ec10ecc36513ec0570d218
+>>>>>>> c88023c937aa7d9e3ac32d9c4d02fc9e5611ac39
