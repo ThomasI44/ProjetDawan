@@ -8,12 +8,13 @@
 
 .sectionUser {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: [nav-start] 15% [nav-end] auto [main-end] 25% [aside-end];
   grid-template-rows: [head-start] 5% [head-end] auto [body-end];
-  /* grid-template-areas:  */
-  /* "menuuser menuuser menuuser"
+  /* grid-template-areas: 
+  "menuuser menuuser menuuser"
   "navuser mainuser sidebaruser"; */
+
 }
 
 .menuUser {
@@ -55,13 +56,13 @@
 
 .section {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: auto;
   grid-template-rows: [head-start] 5% [head-end] auto [body-end] 300px [footer-end];
-  grid-template-areas: 
+  /* grid-template-areas: 
   "menu"
   "main"
-  "footer";
+  "footer"; */
   }
   
   .menu {
