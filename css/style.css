@@ -1,8 +1,7 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
+	color:black;
 	background: #444;
-	color: #48a770;
-	font-weight: 300;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
 a {
@@ -48,7 +47,6 @@ img {
 }
 /* Navbar links */
 .navbar a {
-	color: white;
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -81,7 +79,7 @@ img {
 header{
 position:sticky;
 top:0;
-z-index: 1;
+z-index: 1041;
 }
 
 
@@ -111,7 +109,7 @@ overflow: scroll;
 
 .masthead {
 	background-image:url(../img/background/fontInputUnlogedIndex.png);
-	background-attachment: fixed;
+	background-attachment: relative;
 	padding: 250px 250px 375px;
 	
 } 
@@ -255,7 +253,6 @@ overflow: scroll;
 	border-top: 1px solid #a9ffbc;
 	padding-top: 4rem;
 	padding-bottom: 1rem;
-	margin-bottom: 1rem;
   }
   
 /* End Footer */
@@ -264,6 +261,7 @@ overflow: scroll;
 /* page login .... pas toucher rrrrh */
 
 .modal-content-style {
+	
 	position: relative;
 	display: -ms-flexbox;
 	display: flex;
@@ -302,16 +300,18 @@ overflow: scroll;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #495057;
 	background-color: #fff;
 	background-clip: padding-box;
 	border: 1px solid #ced4da;
 	border-radius: .25rem;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 }
 
+
+
+
 .btn-primary {
-	color: #fff;
 	background-color: #388a5a ;
 	border-color: #2d8a54;
 }
@@ -323,18 +323,12 @@ overflow: scroll;
     DEBUT DES EMMERDES
 */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
 
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
 }
 
 a,
@@ -379,7 +373,6 @@ a:focus {
 		height: 100%;
 		z-index: 999;  
 		background-color: white;      /*ACHANGER*/
-    color:black;							/*ACHANGER*/
 		transition: all 0.3s;
 		margin-left: -265px;
 }
@@ -450,10 +443,6 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
 
 a.article,
 a.article:hover {
