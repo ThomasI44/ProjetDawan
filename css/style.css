@@ -123,10 +123,7 @@ header{
 position:sticky;
 top:0;
 z-index: 1041;
-border-bottom: 0.5px solid black;
 }
-
-
 
 
 /* Ajout du scroll en invisible sur les articles  */
