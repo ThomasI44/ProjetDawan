@@ -10,10 +10,6 @@ a {
 	outline: none;
 }
 
-a:hover, a:focus {
-	color: #2c774b;
-	outline: none;
-}
 
 button {
 	border: none;
@@ -30,9 +26,6 @@ button {
 	border-radius: 2px;
 }
 
-button:hover {
-	background: #2c774b;
-}
 
 img {
 		width: 50px;
@@ -41,24 +34,14 @@ img {
 
 /* TOP NAV BARRRRRRR */
 
-/* Style the navigation bar */
-.navbar {
-	background-color: #555;
-}
+
 /* Navbar links */
 .navbar a {
 	text-decoration: none;
 	font-size: 20px;
 }
-/* Navbar links on mouse-over */
-.navbar a:hover {
-	background-color: #000;
-}
 
-/* Current/active navbar link */
-.active {
-	background-color: #4CAF50;
-}
+
 
 
 /* Fin de la TOP NAVBARRRR */
@@ -149,7 +132,7 @@ overflow: scroll;
 
 
 /* Debut du carousel text  */
-@keyframes changeLetter {
+/* @keyframes changeLetter {
 	0% {
 	  content: "C'est la marmelade ";
 	}
@@ -173,10 +156,10 @@ overflow: scroll;
 	  display: block;
 	  content: "";
 	  font-size: 80px;
-	}
+	} */
   
 
-/* Carousel Text en 3 textes
+Carousel Text en 3 textes
 
 @keyframes changeLetter {
    0% {opacity:0;}
@@ -205,7 +188,7 @@ overflow: scroll;
      content: "";
 
    }
- */
+ 
   
 /* Fin du carousel text  */
 
@@ -366,6 +349,7 @@ a:focus {
     width: 100%;
 }
 
+
 #sidebar {
     position: fixed;
     top: [head-end];
@@ -376,6 +360,12 @@ a:focus {
 		transition: all 0.3s;
 		margin-left: -265px;
 }
+
+#navUser{
+	background-color: white;
+}
+
+
 
 #sidebar.active {
     margin-left: 0;
@@ -402,6 +392,7 @@ a:focus {
     display: block;
 }
 
+.navbar  a:hover,
 #sidebar ul li a:hover {
     color: #00da0b;
     background: #fff;
@@ -444,11 +435,7 @@ ul.CTAs a {
 }
 
 
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE

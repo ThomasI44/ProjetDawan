@@ -6,7 +6,7 @@
   display: grid;
 
   grid-template-columns: [nav-start] 15% [nav-end] auto [main-end] 25% [aside-end];
-  grid-template-rows: [head-start] 5% [head-end] auto [body-end];
+  grid-template-rows: [head-start] auto [head-end] auto [body-end];
   /* grid-template-areas:  */
   /* "menuuser menuuser menuuser"
   "navuser mainuser sidebaruser"; */
@@ -51,7 +51,6 @@
 
 .section {
   display: grid;
-
   grid-template-rows: [head-start] auto [head-end] auto [body-end] auto [footer-end];
   /* grid-template-areas: 
   "menu"
