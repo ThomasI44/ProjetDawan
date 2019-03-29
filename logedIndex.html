@@ -46,18 +46,13 @@
         </nav>
         <main class="mainUser">
             <form class="container form-group textarea is-warning" method="POST" action="#"></form>
-                <textarea class="form-control" rows="5" name="editor1" id="editor1" placeholder="Lachez vos commentaires !"></textarea>
-                <button type="submit" class="btn-sm" id="btnText" name ="btnText" click= "myFunction()" >Envoyez</button>
-                <!-- <script>
-                    function myFunction() {
-                        let x = document.getElementById("editor1").value;
-                        document.getElementById("demo").innerHTML = x;
-                    }
-                </script> -->
+                <textarea class="form-control" rows="5" name="editor1" id="editor1" placeholder="Exprimez-vous"></textarea>
+                <!-- ajout de l'evnement onClick qui appel ma fonction javascript 'textara.js' -->
+                <button type="submit" class="btn-sm btn-success" id="btnText" name ="btnText" onClick= "myFunction()" >Envoyez</button>
             </form>
-            <!-- TEST DE MON AJOUT D'ARTICLE -->
+            <!-- AJOUT D'ARTICLE via le script textarea.js-->
             <div id="demo"></div>
-            <!-- FIN DE MON AJOUT D'ARTICLE -->
+            <!-- FIN AJOUT D'ARTICLE -->
             <article class="box">
                 <img class="img-fluid img-thumbnail" src="./img/imgarticle/luc.jpg" alt="article Luc">
                 <!-- Bouton actions présent dans l'article -->
@@ -78,7 +73,7 @@
                 <h6>
                     <datetime>28/03/2019 - 12:55</datetime>
                 </h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium incidunt suscipit aperiam
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium incidunt suscipit aperiam
                     molestias sed modi sequi voluptatum, molestiae quaerat itaque unde alias! Rem excepturi
                     laudantium culpa magnam quasi tempora sunt.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium incidunt suscipit aperiam

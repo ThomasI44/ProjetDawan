@@ -1,10 +1,10 @@
 'use strict'
-let nom = "Thomas";
-let date = "25 / 04 / 2018";
-
+// Création de mes deux variable nom et date (retrouver dans la maquette de l'article plus bas)
 function myFunction() {
-    let x = document.getElementById("btnText").value;
-    document.getElementById("demo").innerHTML =  `
+    let nom = "Thomas";
+    let date = new Date();
+// Appel de ma div avec l'ID demo. innerHTML me sert a intégré la maquette de mon article 
+    document.getElementById("demo").innerHTML += `
         <article class = "box">
                 <img class="img-fluid img-thumbnail" src="./img/imgarticle/luc.jpg" alt="article Luc">
                 <div class="btn-group">
@@ -24,9 +24,9 @@ function myFunction() {
                 <h6>
                     ${date}
                 </h6>
-                <p id= "demo"></p>
-        </article>
-            `;
-            return x;
-}
-addEventListener("click", myFunction());
+<!-- Appel de mon texteara via l'ID editor1 (.value sert a intégré dans mes balise <p> tous ce que j"écrit) -->
+                <p>${document.getElementById("editor1").value}</p>
+        </article>`;
+// appel de de mon bouton de mon textarea via l'ID btnTEXT.
+   document.getElementById("btnText")
+};
