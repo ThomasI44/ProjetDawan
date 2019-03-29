@@ -1,8 +1,8 @@
 'use strict'
-let nom = "Thomas";
-let date = "25 / 04 / 2018";
 
 function myFunction() {
+    let nom = "Thomas";
+    let date = new toLocaleDateString()
     let x = document.getElementById("btnText").value;
     document.getElementById("demo").innerHTML =  `
         <article class = "box">
