@@ -57,7 +57,54 @@ margin:20px;
 	width: auto;
 }
 
-/* Fin de la TOP NAVBARRRR */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+
+.fa-google {
+	background: #dd4b39;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+/* FIN RESEAU SOCIAL */
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
@@ -98,6 +145,7 @@ overflow: scroll;
 /**modification input unlogedindex**/
 
 .masthead {
+	border-top: 1px solid rgba(0, 0, 0, 0.575);
 	background-image:url(../img/background/fontInputUnlogedIndex.png);
 	background-attachment: relative;
 	padding: 250px 250px 375px;
@@ -114,21 +162,28 @@ overflow: scroll;
 
 
 /*  Debut Icons Grid et presentation site */
+
+
+
 .features-icons {
+	border-top: 1px solid rgba(0, 0, 0, 0.575);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
+	
   }
 	
   .features-icons .features-icons-item {
-	max-width: 20rem;
+	max-width: 25rem;
   }
   
   .features-icons .features-icons-item .features-icons-icon {
+	
 	height: 15rem;
   }
   
   .features-icons .features-icons-item .features-icons-icon i {
-	font-size: 4.5rem;
+	
+	font-size: 2rem;
   }
   
   .features-icons .features-icons-item:hover .features-icons-icon i {
@@ -203,7 +258,11 @@ overflow: scroll;
 
 
 /*  Debut Image Showcases  */
+	.showcase{
+	border-top: 1px solid rgba(0, 0, 0, 0.575);
+	}
   .showcase .showcase-text {
+	
 	padding: 3rem;
   }
   
@@ -226,6 +285,7 @@ overflow: scroll;
 
 /* Debut des CARDS  */
 #card-style {
+	
 	text-align: center;
 	margin-top: 2%;
 	margin-left: 2%;
@@ -235,6 +295,7 @@ overflow: scroll;
 	justify-content: space-around;
 }
 .card{
+	border-top: 1px solid rgba(0, 0, 0, 0.575);
 	height: 100%;
 }
 .aj-card img{
@@ -261,6 +322,7 @@ overflow: scroll;
 /* Debut du testimonials Commentaire */
 
 .testimonials {
+	border-top: 1px solid rgba(0, 0, 0, 0.575);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -278,7 +340,7 @@ overflow: scroll;
 
 /* footer */
   footer {
-	border-top: 1px solid #a9ffbc;
+	border-top: 1px solid rgba(0, 0, 0, 0.575);
 	padding-top: 4rem;
 	padding-bottom: 1rem;
   }
@@ -291,6 +353,8 @@ overflow: scroll;
 .modal-content-style {
 	
 	position: relative;
+	margin-top: 50%;
+	margin-bottom: 50%;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
