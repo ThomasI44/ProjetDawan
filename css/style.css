@@ -31,6 +31,13 @@ img {
 		height: 50px;
 	}
 
+
+
+
+	#demo{
+		word-break: break-all;
+	}
+
 /* TOP NAV BARRRRRRR */
 
 /* Navbar links */
@@ -40,7 +47,15 @@ img {
 	font-size: 20px;
 }
 
+.sidebarUser{
+margin:20px;
+}
 
+
+.sidebarUser img{
+	height : 250px;
+	width: auto;
+}
 
 /* Fin de la TOP NAVBARRRR */
 
@@ -61,6 +76,7 @@ header{
 position:sticky;
 top:0;
 z-index: 1041;
+border-bottom: 0.5px solid black;
 }
 
 
@@ -160,8 +176,8 @@ overflow: scroll;
    35%{opacity:0.9;content: "\22 Bonjour, je cherche à prêter mon jeu de Ouija. C'est URGENT!!\22";}
    64%{opacity:0.9;content: "\22 Bonjour, je cherche à prêter mon jeu de Ouija. C'est URGENT!!\22";}
    66% {opacity:0;}
-   68%{opacity:0.9;content: "\22 Faites pétez les tartines\22";}
-   98% {opacity: 0.9;content:"\22 Envoie les tartines Gros\22"; }
+   68%{opacity:0.9;content: "\22 люблю корпоративные игры. съешь своих мертвецов\22";}
+   98% {opacity: 0.9;content:"\22 люблю корпоративные игры. съешь своих мертвецов\22"; }
 
  }
 
@@ -380,6 +396,7 @@ a:focus {
 
 
 #sidebar {
+	border-right: 0.5px solid black;
     position: fixed;
     top: [head-end];
     left: 0;
