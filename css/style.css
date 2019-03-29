@@ -40,9 +40,58 @@ img {
 	font-size: 20px;
 }
 
-
-
 /* Fin de la TOP NAVBARRRR */
+
+/* DEBUT RESEAU SOCIAL */
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+
+.fa-google {
+	background: #dd4b39;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 3px;
+	border-radius: 100%;
+}
+/* FIN RESEAU SOCIAL */
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {

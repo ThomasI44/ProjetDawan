@@ -3,11 +3,12 @@
 function myFunction() {
     let nom = "Anonymous";
     let date = new Date();
-// Appel de ma div avec l'ID demo. innerHTML me sert a intégré la maquette de mon article 
+    // Appel de ma div avec l'ID demo. innerHTML me sert a intégré la maquette de mon article 
     document.getElementById("demo").innerHTML += `
         <article class = "box">
-                <img class="img-fluid img-thumbnail" src="./img/imgarticle/ano.png" alt="article Luc">
+                <img class="img-fluid img-thumbnail" src="./img/imgarticle/ano.png" alt="article Anonymous">
                 <div class="btn-group">
+                    
                     <button type="button" class="btn-sm btn-success">Action</button>
                     <button type="button" class="btn-sm btn-success dropdown-toggle dropdown-toggle-split"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -24,10 +25,15 @@ function myFunction() {
                 <h6>
                     ${date}
                 </h6>
-<!-- Appel de mon input=text via l'ID editor1 (.value sert a intégré dans mes balise <p> tous ce que j"écrit) -->
+            <!-- Appel de mon texteara via l'ID editor1 (.value sert a intégré dans mes balise <p> tous ce que j"écrit) -->
                 <p>${document.getElementById("editor1").value}</p>
+
+            <!-- Ajout des boutons reseaux sociaux -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-instagram"></a>
         </article>`;
-// appel de de mon bouton de mon textarea via l'ID btnTEXT.
-// Il faut ajouter un evenement dans la page HTML 
-   document.getElementById("btnText")
+    // appel de de mon bouton de mon textarea via l'ID btnTEXT.
+    document.getElementById("btnText")
 };
