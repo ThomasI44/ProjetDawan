@@ -1,8 +1,7 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
+	color:black;
 	background: #444;
-	color: #48a770;
-	font-weight: 300;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
 a {
@@ -49,7 +48,6 @@ img {
 }
 /* Navbar links */
 .navbar a {
-	color: white;
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -60,7 +58,7 @@ img {
 
 /* Current/active navbar link */
 .active {
-	background-color: #4CAF50;
+
 }
 
 
@@ -182,8 +180,9 @@ overflow: scroll;
 /**modification input unlogedindex**/
 
 .masthead {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	background-image:url(../img/background/fontInputUnlogedIndex.png);
-	background-attachment: fixed;
+	background-attachment: relative;
 	padding: 250px 250px 375px;
 
 	
@@ -200,6 +199,7 @@ overflow: scroll;
 
 /*  Debut Icons Grid et presentation site */
 .features-icons {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -288,9 +288,15 @@ overflow: scroll;
 
 
 /*  Debut Image Showcases  */
+.no-gutters {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
+	background: #28a745;
+}
+
   .showcase .showcase-text {
+	color: white;
 	padding: 3rem;
-	background: black;
+	
   }
   
   .showcase .showcase-img {
@@ -309,6 +315,7 @@ overflow: scroll;
 /* Debut du testimonials Commentaire */
 
 .testimonials {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -326,13 +333,73 @@ overflow: scroll;
 
 /* footer */
   footer {
-	border-top: 1px solid #a9ffbc;
+		background: #28a745;
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 4rem;
-	padding-bottom: 1rem;
-	margin-bottom: 1rem;
-  }	
+	padding-bottom: 4rem;
+	}
+	
   
 /* End Footer */
+
+
+/* page login .... pas toucher rrrrh */
+
+.modal-content-style {
+	
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: rgba(0, 0, 0, 0.493);
+	background-clip: padding-box;
+	border-radius: .3rem;
+	outline: 0;
+}
+
+.modal-header-style {
+	text-align: center;
+}
+.modal-header-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+
+
+}
+
+.modal-footer-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.form-control-style {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+
+
+
+.btn-primary {
+	background-color: #388a5a ;
+	border-color: #2d8a54;
+}
 
 
 
@@ -341,18 +408,12 @@ overflow: scroll;
     DEBUT DES EMMERDES
 */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
 
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
 }
 
 a,
@@ -397,7 +458,6 @@ a:focus {
 		height: 100%;
 		z-index: 999;  
 		background-color: white;      /*ACHANGER*/
-    color:black;							/*ACHANGER*/
 		transition: all 0.3s;
 		margin-left: -265px;
 }
@@ -435,7 +495,7 @@ a:focus {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #01bb0b;
+    background: #28a745;
 }
 
 a[data-toggle="collapse"] {
@@ -468,10 +528,6 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
 
 a.article,
 a.article:hover {
