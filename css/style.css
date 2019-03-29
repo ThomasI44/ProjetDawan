@@ -1,7 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
 	color:black;
-	
 }
 
 a {
@@ -10,10 +9,6 @@ a {
 	outline: none;
 }
 
-a:hover, a:focus {
-	color: #2c774b;
-	outline: none;
-}
 
 button {
 	border: none;
@@ -30,9 +25,6 @@ button {
 	border-radius: 2px;
 }
 
-button:hover {
-	background: #2c774b;
-}
 
 img {
 		width: 50px;
@@ -41,97 +33,16 @@ img {
 
 /* TOP NAV BARRRRRRR */
 
-/* Style the navigation bar */
-.navbar {
-	background-color: #555;
-}
 /* Navbar links */
 .navbar a {
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 20px;
 }
-/* Navbar links on mouse-over */
-.navbar a:hover {
-
-}
-
-
 
 
 
 /* Fin de la TOP NAVBARRRR */
-
-
-/* page login .... pas toucher rrrrh */
-
-.modal-content-style {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	width: 100%;
-	pointer-events: auto;
-	background-color: rgba(0, 0, 0, 0.712);
-	background-clip: padding-box;
-	border-radius: .3rem;
-	outline: 0;
-}
-
-.modal-dialog {
-	max-width: 500px;
-	margin: 18rem auto;
-}
-
-
-
-.modal-header-style {
-	text-align: center;
-}
-.modal-header-style {
-	padding-right: 3rem;
-	padding-left: 3rem;
-
-
-}
-
-
-.modal-footer-style {
-	padding-right: 3rem;
-	padding-left: 3rem;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-}
-
-.form-control-style {
-	display: block;
-	width: 100%;
-	height: calc(1.5em + .75rem + 2px);
-	padding: .375rem .75rem;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #495057;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid #ced4da;
-	border-radius: .25rem;
-	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn-primary {
-	color: #fff;
-	background-color: #388a5a ;
-	border-color: #2d8a54;
-}
-
-
-
-
-
-
-
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
@@ -155,13 +66,6 @@ z-index: 1041;
 
 
 
-
-img {
-		width: 50px;
-		height: 50px;
-	}
-
-
 /* Ajout du scroll en invisible sur les articles  */
 main:hidden {
 overflow: scroll;
@@ -178,11 +82,9 @@ overflow: scroll;
 /**modification input unlogedindex**/
 
 .masthead {
-	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	background-image:url(../img/background/fontInputUnlogedIndex.png);
 	background-attachment: relative;
 	padding: 250px 250px 375px;
-
 	
 } 
 
@@ -197,7 +99,6 @@ overflow: scroll;
 
 /*  Debut Icons Grid et presentation site */
 .features-icons {
-	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -222,7 +123,7 @@ overflow: scroll;
 
 
 /* Debut du carousel text  */
-@keyframes changeLetter {
+/* @keyframes changeLetter {
 	0% {
 	  content: "C'est la marmelade ";
 	}
@@ -246,21 +147,21 @@ overflow: scroll;
 	  display: block;
 	  content: "";
 	  font-size: 80px;
-	}
+	} */
   
 
-/* Carousel Text en 3 textes
+/* Carousel Text en 3 textes */
 
 @keyframes changeLetter {
    0% {opacity:0;}
-   2%{opacity:1; content:"A";}
-   31%{opacity:1;content: "A";}
+   2%{opacity:0.9; content:"\22 Robert 53 ans, cherche jeune(s) homme(s) pour une partie de petits chevaux. Gros Bisous!\22";}
+   31%{opacity:0.9;content: "\22 Robert 53 ans, cherche jeune(s) homme(s) pour une partie de petits chevaux. Gros Bisous!\22";}
    33% {opacity:0;}
-   35%{opacity:1;content: "B";}
-   64%{opacity:1;content: "B";}
+   35%{opacity:0.9;content: "\22 Bonjour, je cherche à prêter mon jeu de Ouija. C'est URGENT!!\22";}
+   64%{opacity:0.9;content: "\22 Bonjour, je cherche à prêter mon jeu de Ouija. C'est URGENT!!\22";}
    66% {opacity:0;}
-   68%{opacity:1;content: "C";}
-   98% {opacity: 1;content:"C"; }
+   68%{opacity:0.9;content: "\22 Faites pétez les tartines\22";}
+   98% {opacity: 0.9;content:"\22 Envoie les tartines Gros\22"; }
 
  }
 
@@ -268,7 +169,7 @@ overflow: scroll;
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size:200px;
+   font-size:30px;
 
  }
 
@@ -278,7 +179,7 @@ overflow: scroll;
      content: "";
 
    }
- */
+ 
   
 /* Fin du carousel text  */
 
@@ -286,15 +187,8 @@ overflow: scroll;
 
 
 /*  Debut Image Showcases  */
-.no-gutters {
-	border-top: 1px solid rgba(0, 0, 0, 0.623);
-	background: #28a745;
-}
-
   .showcase .showcase-text {
-	color: white;
 	padding: 3rem;
-	
   }
   
   .showcase .showcase-img {
@@ -351,7 +245,6 @@ overflow: scroll;
 /* Debut du testimonials Commentaire */
 
 .testimonials {
-	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -369,12 +262,10 @@ overflow: scroll;
 
 /* footer */
   footer {
-		background: #28a745;
-	border-top: 1px solid rgba(0, 0, 0, 0.623);
+	border-top: 1px solid #a9ffbc;
 	padding-top: 4rem;
-	padding-bottom: 4rem;
-	}
-	
+	padding-bottom: 1rem;
+  }
   
 /* End Footer */
 
@@ -487,6 +378,7 @@ a:focus {
     width: 100%;
 }
 
+
 #sidebar {
     position: fixed;
     top: [head-end];
@@ -497,6 +389,12 @@ a:focus {
 		transition: all 0.3s;
 		margin-left: -265px;
 }
+
+#navUser{
+	background-color: white;
+}
+
+
 
 #sidebar.active {
     margin-left: 0;
@@ -523,6 +421,7 @@ a:focus {
     display: block;
 }
 
+.navbar  a:hover,
 #sidebar ul li a:hover {
     color: #00da0b;
     background: #fff;
@@ -531,7 +430,7 @@ a:focus {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #28a745;
+    background: #01bb0b;
 }
 
 a[data-toggle="collapse"] {
@@ -565,11 +464,7 @@ ul.CTAs a {
 }
 
 
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
