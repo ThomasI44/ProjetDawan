@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,31 +17,31 @@
                 <header class="menu box">
                     <div class="navbar"> 
                        
-                    
-                            <button type="button" id="sidebarCollapse" class="btn btn-success">
-                                    <i class="fa fa-align-justify"></i>
-                            </button>
+                        <button type="button" id="sidebarCollapse" class="btn btn-success">
+                            <i class="fa fa-navicon"></i>
+                        </button>
 
-                            <a href="unlogedIndex.html"><img src="img/logo.png" alt="logo"/></a>
+
+                            <a id="logo" href="unlogedIndex.html"><img src="img/logo.png" alt="logo"/></a>
                                      
                         <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
                         <div class="login">
 
                             <!-- debut popUp Window login-->
                               
-                                       
-                                        <a data-toggle="modal" data-target="#popUpWindow"><i class="fa fa-fw fa-user"></i>Login</a>
+                             
+                                   <a data-toggle="modal" data-target="#popUpWindow"><i class="fa fa-fw fa-user"></i>Login</a>
             
                                         <div class="modal fade" id="popUpWindow">
                                           <div class="modal-dialog">
-                                            <div class="modal-content">
+                                            <div class="modal-content-style">
                                               <!-- header -->
-                                              <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <div class="modal-header-style">
+                                                <button type="button" class="close-style" data-dismiss="modal">&times;</button>
                                                 <h3 class="modal-title">Club Marmelade</h3>
                                               </div>
                                               <!-- body -->
-                                              <div class="modal-header">
+                                              <div class="modal-header-style">
                                                 <form role="form">
                                                   <div class="form-group">
                                                     <input type="email" class="form-control" placeholder="Email"/>
@@ -50,7 +50,7 @@
                                                 </form>
                                               </div>
                                               <!-- footer -->
-                                              <div class="modal-footer">
+                                              <div class="modal-footer-style">
                                                 <button class="btn btn-primary btn-block">Log In</button>
                                               </div>
                                               
@@ -58,40 +58,104 @@
                                           </div>
                                         </div>
                                         
-                                      
+                                       
                             <!-- Fin popUp Window login-->
-
-                            <!--<a href=""><i class="fa fa-fw fa-user" data-toggle="modal" data-target="#popUpWindow"></i> Login</a>-->
-                            
-                            
-                            
-                            
-                            
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inscription</a>
-                        </div>
+                                                 
+                           <!-- debut popUp Window Subscribe-->
+                                
+                                        
+                                        <a data-toggle="modal" data-target="#popUpWindow2"><i class="fa fa-fw fa-envelope"></i> Inscription</a>
+              
+                                          <div class="modal fade" id="popUpWindow2">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content-style">
+                                                <!-- header -->
+                                                <div class="modal-header-style">
+                                                  <button type="button" class="close-style" data-dismiss="modal">&times;</button>
+                                                  <h3 class="modal-title">Welcome to Club Marmelade</h3>
+                                                </div>
+                                                <!-- body -->
+                                                <div class="modal-header-style">
+                                                  <form role="form">
+                                                    <div class="form-group-style">
+                                                      <input type="email" class="form-control-style" placeholder="Email"/>
+                                                      <input type="Username" class="form-control-style" placeholder="Username" />
+                                                      <input type="password" class="form-control-style" placeholder="Password" />
+                                                      <input type="confirm password" class="form-control-style" placeholder="Confirm Password" />
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                                <!-- footer -->
+                                                <div class="modal-footer-style">
+                                                  <button class="btn btn-primary btn-block">Register dude !</button>
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+                                          </div>
+                                  </div>
+                         
+                                    
                     </div>
                 </header>
 <!-- FIN Top Nav Bar  FIN-->
 
 
 <!-- DEBUT  Nav Bar Lateral  DEBUT-->   
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Bootstrap Sidebar</h3>
+        </div>
 
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
 
       
                 
-<div class="wrapper">
-                 <nav id="sidebar">
-                    <h2 class="icon icon-stack">Sidebar</h2>
-                    <ul>
-                        <li><a class="icon icon-data" href="#">Connexion</a></li>
-                        <li><a class="icon icon-location" href="#">Inscription</a></li>
-                        <li><a class="icon icon-study" href="#">A propos</a></li>
-                        <li><a class="icon icon-photo" href="#">Contact</a></li>
-                    </ul>
-                </nav> 
-<!-- FIN  Nav Bar Lateral  FIN--> 
 
-                <main class="main" id="content">
+<!-- FIN  Nav Bar Lateral  FIN--> 
+<div id="content">
+                <main class="main">
 <!-- DEPART Première Box de la main page DEPART -->
                         <div class="masthead text-white text-center">
                                 <div class="overlay"></div>
@@ -191,6 +255,63 @@
 
 <!-- fin Image Showcases -->
 
+<!-- Debut des cards Page Features -->
+<div class="row text-center">
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Find Out More!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Find Out More!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Find Out More!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Find Out More!</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Fin des Cards /.row -->
 
                             
 <!-- Début Testimonials Commentaire  -->
@@ -225,11 +346,13 @@
 <!-- Fin Testimonials Commentaire  -->
 
                 </main>
+      </div>
+</div>
                 
 <!-- Footer -->
 
 
-  <footer class="footer bg-light">
+  <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -250,7 +373,7 @@
                   <a href="#">Privacy Policy</a>
                 </li>
               </ul>
-              <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+              <p class="text-muted small mb-4 mb-lg-0">&copy; Marmelade Team. All Rights Reserved.</p>
             </div>
             <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
               <ul class="list-inline mb-0">
@@ -286,6 +409,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="script/script.js"></script>
 </body>
 </html>

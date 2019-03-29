@@ -1,34 +1,76 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
+	color:black;
 	background: #444;
+}
+
+a {
+	text-decoration: none;
 	color: #48a770;
-	font-weight: 300;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #2c774b;
+	outline: none;
+}
+
+button {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #388a5a;
+	color: #fff;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
 }
 
-header{
-	position:sticky;
-	top:0;
+button:hover {
+	background: #2c774b;
 }
-
 
 img {
 		width: 50px;
 		height: 50px;
 	}
+<<<<<<< HEAD
+=======
 
-/* DEBUT CSS TOP NAV BAR  */
+/* TOP NAV BARRRRRRR */
+
 /* Style the navigation bar */
+.navbar {
+	
+	background-color: #555;
+}
+/* Navbar links */
+.navbar a {
+	text-decoration: none;
+	font-size: 20px;
+}
+/* Navbar links on mouse-over */
+.navbar a:hover {
+	background-color: #000;
+}
 
-  
+/* Current/active navbar link */
+.active {
 
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  /* @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  } */
+}
 
+>>>>>>> master
+
+/* Fin de la TOP NAVBARRRR */
+
+
+/* page login .... pas toucher rrrrh */
+
+<<<<<<< HEAD
 	/* FIN CSS TOP NAV BAR  */
 	
 /* DEBUT RESEAU SOCIAL */
@@ -54,6 +96,25 @@ img {
 .fa-twitter {
 	background: #55ACEE;
 	color: white;
+=======
+.modal-content-style {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: rgba(0, 0, 0, 0.712);
+	background-clip: padding-box;
+	border-radius: .3rem;
+	outline: 0;
+}
+
+.modal-dialog {
+	max-width: 500px;
+	margin: 18rem auto;
+>>>>>>> master
 }
 
 .fa-google {
@@ -68,88 +129,103 @@ img {
 /* FIN RESEAU SOCIAL */
 
 
-
-
-/* CSS POUR NAV BAR LATERAL  */
-
-
-
-.line{
-	width: 100%;
+.modal-header-style {
+	text-align: center;
 }
+.modal-header-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
 
-main{
-	width:100%;
-}
-
-<<<<<<< HEAD
-.wrapper {
-	display: flex;
-}
-#sidebar {
-
-
-    min-width: 250px;
-    max-width: 250px;
-	transition: all 0.3s;
-}
-#sidebar.active{
-	margin-left: -250px;
-	
-}
-
-#sidebar .sidebar-header{
-	padding: 20px;
-
-}
-#sidebar ul.components{
-	padding: 20px;
 
 }
 
 
+.modal-footer-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
 
-#sidebar ul li a{
-	padding: 10px;
-	font-size: 1.1em;
+.form-control-style {
 	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+.btn-primary {
+	color: #fff;
+	background-color: #388a5a ;
+	border-color: #2d8a54;
 }
 
 
 
 
-/* FIN CSS NAV BAR LATERAL */
 
 
 
-=======
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+	}
+}
+
+
+
+
+
+
+header{
+position:sticky;
+top:0;
+z-index: 1041;
+}
+
+
+
+
+
 img {
 		width: 50px;
 		height: 50px;
-<<<<<<< HEAD
-}
+	}
+
 
 /* Ajout du scroll en invisible sur les articles  */
 main:hidden {
-	overflow: scroll;
+overflow: scroll;
 }
-=======
-<<<<<<< HEAD
-	}
+
+
+#logo{
+	position: absolute;
+	left:100px;
+}
 
 
 
 /**modification input unlogedindex**/
 
 .masthead {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	background-image:url(../img/background/fontInputUnlogedIndex.png);
-	background-attachment: fixed;
+	background-attachment: relative;
 	padding: 250px 250px 375px;
+
 	
 } 
 
@@ -164,6 +240,7 @@ main:hidden {
 
 /*  Debut Icons Grid et presentation site */
 .features-icons {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -252,8 +329,15 @@ main:hidden {
 
 
 /*  Debut Image Showcases  */
+.no-gutters {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
+	background: #28a745;
+}
+
   .showcase .showcase-text {
+	color: white;
 	padding: 3rem;
+	
   }
   
   .showcase .showcase-img {
@@ -272,6 +356,7 @@ main:hidden {
 /* Debut du testimonials Commentaire */
 
 .testimonials {
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 7rem;
 	padding-bottom: 7rem;
   }
@@ -288,34 +373,233 @@ main:hidden {
 
 
 /* footer */
-  footer.footer {
+  footer {
+		background: #28a745;
+	border-top: 1px solid rgba(0, 0, 0, 0.623);
 	padding-top: 4rem;
 	padding-bottom: 4rem;
-	margin-bottom: 1rem;
-  }
+	}
+	
   
 /* End Footer */
 
 
-/* page login  */
+/* page login .... pas toucher rrrrh */
 
-#popUpWindow {
-	background: rgba(0, 0, 0, 0.555); 
-	text-align: center;
-
-  }
-
-.modal-content {
-	background: rgba(0, 0, 0, 0.514);
-	display: flex;
+.modal-content-style {
 	
-}
-.modal-header {
 	position: relative;
-=======
->>>>>>> d5d5aa5fd90eef0a7ea37992ca901ffd9d2984eb
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: rgba(0, 0, 0, 0.493);
+	background-clip: padding-box;
+	border-radius: .3rem;
+	outline: 0;
 }
+
+.modal-header-style {
+	text-align: center;
+}
+.modal-header-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+
+
+}
+
+.modal-footer-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.form-control-style {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+
+
+
+.btn-primary {
+	background-color: #388a5a ;
+	border-color: #2d8a54;
+}
+<<<<<<< HEAD
 >>>>>>> 40f03aca5403ce3cb9ec10ecc36513ec0570d218
 >>>>>>> c88023c937aa7d9e3ac32d9c4d02fc9e5611ac39
 
 
+=======
+
+
+
+
+/*
+    DEBUT DES EMMERDES
+*/
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+
+    background: #fff;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+    width: 100%;
+}
+
+#sidebar {
+    position: fixed;
+    top: [head-end];
+    left: 0;
+		height: 100%;
+		z-index: 999;  
+		background-color: white;      /*ACHANGER*/
+		transition: all 0.3s;
+		margin-left: -265px;
+}
+
+#sidebar.active {
+    margin-left: 0;
+}
+
+
+
+#sidebar .sidebar-header {
+    padding: 20px;
+
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #00da0b;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #28a745;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+	width: calc(100% - 250px);
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+>>>>>>> master
