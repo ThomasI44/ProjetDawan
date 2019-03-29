@@ -55,13 +55,12 @@
 
 .section {
   display: grid;
-  /*grid-gap: 10px;*/
-  grid-template-columns: auto;
+  grid-gap: 20px;
   grid-template-rows: [head-start] auto [head-end] auto [body-end] 300px [footer-end];
-  grid-template-areas: 
+  /* grid-template-areas: 
   "menu"
   "main"
-  "footer";
+  "footer"; */
   }
   
   .menu {

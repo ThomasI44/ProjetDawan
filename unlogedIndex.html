@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/topnavbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylegrid.css">
     <title>Accueil</title>
@@ -14,13 +13,16 @@
 <body>
     <div class="section">   <!-- DEBUT DE GRID-->
 
-
-
 <!-- DEBUT Top Nav Bar  DEBUT-->
                 <header class="menu box">
                     <div class="navbar"> 
                        
-                        <button data-effect="st-effect-5"><i class="home fa fa-fw fa-home" id="st-trigger-effects"></i>Home</button>
+                    
+                            <button type="button" id="sidebarCollapse" class="btn btn-success">
+                                    <i class="fa fa-align-justify"></i>
+                            </button>
+
+                            <a href="unlogedIndex.html"><img src="img/logo.png" alt="logo"/></a>
                                      
                         <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
                         <div class="login">
@@ -28,18 +30,18 @@
                             <!-- debut popUp Window login-->
                               
                                        
-                                        <a data-toggle="modal" data-target="#popUpWindow"><i class="fa fa-fw fa-user"></i>Login</a>
+                                      <a data-toggle="modal" data-target="#popUpWindow"><i class="fa fa-fw fa-user"></i>Login</a>
             
                                         <div class="modal fade" id="popUpWindow">
                                           <div class="modal-dialog">
-                                            <div class="modal-content">
+                                            <div class="modal-content-style">
                                               <!-- header -->
-                                              <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <div class="modal-header-style">
+                                                <button type="button" class="close-style" data-dismiss="modal">&times;</button>
                                                 <h3 class="modal-title">Club Marmelade</h3>
                                               </div>
                                               <!-- body -->
-                                              <div class="modal-header">
+                                              <div class="modal-header-style">
                                                 <form role="form">
                                                   <div class="form-group">
                                                     <input type="email" class="form-control" placeholder="Email"/>
@@ -48,7 +50,7 @@
                                                 </form>
                                               </div>
                                               <!-- footer -->
-                                              <div class="modal-footer">
+                                              <div class="modal-footer-style">
                                                 <button class="btn btn-primary btn-block">Log In</button>
                                               </div>
                                               
@@ -56,35 +58,67 @@
                                           </div>
                                         </div>
                                         
-                                      
+                                       
                             <!-- Fin popUp Window login-->
-
-                            <!--<a href=""><i class="fa fa-fw fa-user" data-toggle="modal" data-target="#popUpWindow"></i> Login</a>-->
-                            
-                            
-                            
-                            
-                            
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inscription</a>
-                        </div>
+                                                 
+                           <!-- debut popUp Window Subscribe-->
+                                
+                                        
+                                        <a data-toggle="modal" data-target="#popUpWindow2"><i class="fa fa-fw fa-envelope"></i> Inscription</a>
+              
+                                          <div class="modal fade" id="popUpWindow2">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content-style">
+                                                <!-- header -->
+                                                <div class="modal-header-style">
+                                                  <button type="button" class="close-style" data-dismiss="modal">&times;</button>
+                                                  <h3 class="modal-title">Welcome to Club Marmelade</h3>
+                                                </div>
+                                                <!-- body -->
+                                                <div class="modal-header-style">
+                                                  <form role="form">
+                                                    <div class="form-group-style">
+                                                      <input type="email" class="form-control-style" placeholder="Email"/>
+                                                      <input type="Username" class="form-control-style" placeholder="Username" />
+                                                      <input type="password" class="form-control-style" placeholder="Password" />
+                                                      <input type="confirm password" class="form-control-style" placeholder="Confirm Password" />
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                                <!-- footer -->
+                                                <div class="modal-footer-style">
+                                                  <button class="btn btn-primary btn-block">Register</button>
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                         
+                                      
                     </div>
                 </header>
 <!-- FIN Top Nav Bar  FIN-->
 
 
-<!-- DEBUT  Nav Bar Lateral  DEBUT-->        
-                <nav class="st-menu st-effect-5" id="menu-5">
-                    <h2 class="icon icon-stack">Sidebar</h2>
-                    <ul>
-                        <li><a class="icon icon-data" href="#">Connexion</a></li>
-                        <li><a class="icon icon-location" href="#">Inscription</a></li>
-                        <li><a class="icon icon-study" href="#">A propos</a></li>
-                        <li><a class="icon icon-photo" href="#">Contact</a></li>
-                    </ul>
-                </nav>
+<!-- DEBUT  Nav Bar Lateral  DEBUT-->   
+
+
+      
+                
+<div class="wrapper">
+  <nav id="sidebar">
+     <h2 class="icon icon-stack">Sidebar</h2>
+     <ul>
+         <li><a class="icon icon-data" href="#">Connexion</a></li>
+         <li><a class="icon icon-location" href="#">Inscription</a></li>
+         <li><a class="icon icon-study" href="#">A propos</a></li>
+         <li><a class="icon icon-photo" href="#">Contact</a></li>
+     </ul>
+                </nav> 
 <!-- FIN  Nav Bar Lateral  FIN--> 
 
-                <main class="main">
+                <main class="main" id="content">
 <!-- DEPART Première Box de la main page DEPART -->
                         <div class="masthead text-white text-center">
                                 <div class="overlay"></div>
@@ -218,7 +252,7 @@
 <!-- Fin Testimonials Commentaire  -->
 
                 </main>
-                
+                </div>
 <!-- Footer -->
 
 
@@ -279,5 +313,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script/script.js"></script>
 </body>
 </html>

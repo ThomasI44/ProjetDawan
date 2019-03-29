@@ -40,6 +40,43 @@ img {
 		height: 50px;
 	}
 
+/* TOP NAV BARRRRRRR */
+
+/* Style the navigation bar */
+.navbar {
+	background-color: #555;
+}
+/* Navbar links */
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+/* Navbar links on mouse-over */
+.navbar a:hover {
+	background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+	background-color: #4CAF50;
+}
+
+
+/* Fin de la TOP NAVBARRRR */
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+	}
+}
+
+
+
+
+
 
 
 /**modification input unlogedindex**/
@@ -195,19 +232,57 @@ img {
 /* End Footer */
 
 
-/* page login  */
-.modal-dialog {
-	display : flex;
-}
-.modal-content {
-	background: rgba(0, 0, 0, 0.514);
+/* page login .... pas toucher rrrrh */
+
+.modal-content-style {
+	position: relative;
+	display: -ms-flexbox;
 	display: flex;
-	
-}
-.modal-header {
-	text-align: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: rgba(0, 0, 0, 0.493);
+	background-clip: padding-box;
+	border-radius: .3rem;
+	outline: 0;
 }
 
-.modal-title {
+.modal-header-style {
 	text-align: center;
+}
+.modal-header-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+
+
+}
+
+.modal-footer-style {
+	padding-right: 3rem;
+	padding-left: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.form-control-style {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #388a5a ;
+	border-color: #2d8a54;
 }
