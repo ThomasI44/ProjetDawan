@@ -1,14 +1,10 @@
 
-/* colortation des cases (pour s'y retrouver dans le grid) */
-.box {
-  background-color: lightgray;
-  color: #fff;
-}
+
 /* Début déclaration du GRID pour la page d'acceuil utilisateur (page logedIndex.html)*/
 
 .sectionUser {
   display: grid;
-  grid-gap: 15px;
+
   grid-template-columns: [nav-start] 15% [nav-end] auto [main-end] 25% [aside-end];
   grid-template-rows: [head-start] 5% [head-end] auto [body-end];
   /* grid-template-areas:  */
@@ -55,28 +51,56 @@
 
 .section {
   display: grid;
-  grid-gap: 20px;
-  grid-template-rows: [head-start] auto [head-end] auto [body-end] 300px [footer-end];
+
+  grid-template-rows: [head-start] auto [head-end] auto [body-end] auto [footer-end];
   /* grid-template-areas: 
   "menu"
   "main"
   "footer"; */
   }
   
+
+
+
+
   .menu {
+    /* grid-column-start: nav-start;
+    grid-column-end: main-end; */
     grid-row-start: head-start;
     grid-row-end: head-end;
   }
   
 
- 
-  .main {
+
+
+ /* .wrapper{
+   grid-column-start: nav-start;
+  grid-column-end: main-end; 
+  grid-row-start: head-end;
+  grid-row-end: body-end;
+}  */
+
+
+  /* #sidebar{
+    grid-column-start: nav-start;
+    grid-column-end: nav-end;
     grid-row-start: head-end;
     grid-row-end: body-end;
   }
-  
+  */
+
+ 
+   .wrapper {
+    /* grid-column-start: nav-end;
+    grid-column-end: main-end; */
+    grid-row-start: head-end;
+    grid-row-end: body-end;
+  }
+   
 
   .footer{
+ /*   /* grid-column-start: nav-start;
+    grid-column-end: main-end; */
     grid-row-start: body-end;
     grid-row-end: footer-end;
   }
