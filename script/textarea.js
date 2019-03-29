@@ -1,12 +1,12 @@
 'use strict'
-
+// Création de mes deux variable nom et date (retrouver dans la maquette de l'article plus bas)
 function myFunction() {
-    let nom = "Thomas";
-    let date = new toLocaleDateString()
-    let x = document.getElementById("btnText").value;
-    document.getElementById("demo").innerHTML =  `
+    let nom = "Anonymous";
+    let date = new Date();
+// Appel de ma div avec l'ID demo. innerHTML me sert a intégré la maquette de mon article 
+    document.getElementById("demo").innerHTML += `
         <article class = "box">
-                <img class="img-fluid img-thumbnail" src="./img/imgarticle/luc.jpg" alt="article Luc">
+                <img class="img-fluid img-thumbnail" src="./img/imgarticle/ano.png" alt="article Luc">
                 <div class="btn-group">
                     <button type="button" class="btn-sm btn-success">Action</button>
                     <button type="button" class="btn-sm btn-success dropdown-toggle dropdown-toggle-split"
@@ -24,9 +24,10 @@ function myFunction() {
                 <h6>
                     ${date}
                 </h6>
-                <p id= "demo"></p>
-        </article>
-            `;
-            return x;
-}
-addEventListener("click", myFunction());
+<!-- Appel de mon input=text via l'ID editor1 (.value sert a intégré dans mes balise <p> tous ce que j"écrit) -->
+                <p>${document.getElementById("editor1").value}</p>
+        </article>`;
+// appel de de mon bouton de mon textarea via l'ID btnTEXT.
+// Il faut ajouter un evenement dans la page HTML 
+   document.getElementById("btnText")
+};

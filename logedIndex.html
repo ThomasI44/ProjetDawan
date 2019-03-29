@@ -46,14 +46,9 @@
         </nav>
         <main class="mainUser">
             <form class="container form-group textarea is-warning" method="POST" action="#"></form>
-                <textarea class="form-control" rows="5" name="editor1" id="editor1" placeholder="Lachez vos commentaires !"></textarea>
-                <button type="submit" class="btn-sm" id="btnText" name ="btnText" click= "myFunction()" >Envoyez</button>
-                <!-- <script>
-                    function myFunction() {
-                        let x = document.getElementById("editor1").value;
-                        document.getElementById("demo").innerHTML = x;
-                    }
-                </script> -->
+                <!-- <textarea class="form-control" rows="5" name="editor1" id="editor1" placeholder="Lachez vos commentaires !" no-resize></textarea> -->
+                <input type="text" class="form-control" name="editor1" id="editor1" placeholder="Lachez vos commentaires !">
+                <button type="submit" class="btn-sm" id="btnText" name ="btnText" onClick= "myFunction()" >Envoyez</button>
             </form>
             <!-- TEST DE MON AJOUT D'ARTICLE -->
             <div id="demo"></div>
