@@ -47,49 +47,49 @@ img {
 .fa-facebook {
 	background: #3B5998;
 	color: white;
-	padding: 20px;
-	font-size: 30px;
+	padding: 9px;
+	font-size: 15px;
 	width: 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
+	margin: 30px 3px;
+	border-radius: 100%;
 }
 
 .fa-twitter {
 	background: #55ACEE;
 	color: white;
-	padding: 20px;
-	font-size: 30px;
+	padding: 9px;
+	font-size: 15px;
 	width: 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
+	margin: 30px 3px;
+	border-radius: 100%;
 }
 
 .fa-google {
 	background: #dd4b39;
 	color: white;
-	padding: 20px;
-	font-size: 30px;
+	padding: 9px;
+	font-size: 15px;
 	width: 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
+	margin: 30px 3px;
+	border-radius: 100%;
 }
 
 .fa-instagram {
 	background: #125688;
 	color: white;
-	padding: 20px;
-	font-size: 30px;
+	padding: 9px;
+	font-size: 15px;
 	width: 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
+	margin: 30px 3px;
+	border-radius: 100%;
 }
 /* FIN RESEAU SOCIAL */
 
